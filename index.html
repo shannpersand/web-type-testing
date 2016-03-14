@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+  <title>Web Type Testing</title>
+  <style>
+    body {
+      width: 100%;
+      max-width: 700px;
+      background-color: snowwhite;
+      margin: 0 auto;
+      padding: 50px 0;
+      line-height: 1.3;
+      }
+
+    textarea {
+      height: auto
+    }
+    </style>
+    <script type='text/javascript' src='jquery-2.2.1.min.js' ></script>
+</head>
+<body>
+  <h1>Web Type Testing, yay!</h1>
+    <section class="inputs">
+    <div class="text">
+      <textarea class="input-text"cols="52" rows="10" >
+        Sample Text
+      </textarea>
+      <button>set text</button>
+    </div>
+      
+    <div class="leading">
+      <label>line height</label>
+      <input type="text" name="line-height" class="line-height" placeholder="1.3" />
+    </div>
+    </section>
+    <section class="type-section">
+    </h2>Here would be the test type</h2>
+    <div class="controls">
+      <input type="text" name="point-size" class="point-size" placeholder="set point size" /><span>px</span>
+      <button class="change">set size</button>
+    </div>
+    <p class="paragraph">
+      Here is some test type.
+    </p>
+    </section>
+    <section class="type-section">
+    </h2>Here would be the test type</h2>
+    <div class="controls">
+      <input type="text" name="point-size" class="point-size" placeholder="set point size" /><span>px</span>
+      <button class="change">set size</button>
+    </div>
+    <p class="paragraph">
+      Here is some test type.
+    </p>
+    </section>
+    <script>
+      $(document).ready(function() {
+
+          $('.change').each(function() {
+            $(this).click(function() {
+              fontSize = $(this).prev().prev(".point-size").val();
+              $(this).parent().next('.paragraph').css("font-size", fontSize + "px");
+            });
+          });
+        });
+    </script>
+  </body>
+</html>
+
