@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  background-color: seashell;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 16px;
+}
+
+.hidden {
+  visibility: none;
+  opacity: 0;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.half {
+  width: 50%;
+  float: left;
+}
+
+.full {
+  width: 100%;
+}
+
+input, textarea {
+  border: 0;
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+header {
+  padding: 15px 30px;
+  margin: 0;
+  background: tomato;
+  width: 100%;
+}
+
+.header-inner {
+  max-width: 900px;
+  padding: 30px;
+  background: salmon;
+  margin: 0 auto;
+}
+
+.menu {
+  width: 100%;
+}
+
+
+h1 {
+  color: seashell;
+  font-weight: bolder;
+  font-size: 2em;
+  line-height: 1.2;
+}
+
+h2 {
+  text-align: center;
+  color: orchid;
+}
+
+section {
+  margin: 1em auto 2em;
+  padding: 0 30px;
+  max-width: 900px;
+  width: 100%;
+}
+
+button {
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.button-main {
+  background: seashell;
+  color: tomato;
+}
+
+.button-secondary {
+  background: orchid;
+}
+
+.controls {
+  width: 20%;
+  float: left;
+  margin-right: 5%;
+}
+
+.paragraph {
+  width: 75%;
+  float: right;
+}
+
+.point-size {
+  width: 75%;
+}
+
+.type-section {
+  position: relative;
+  border-top: 1px solid gainsboro;
+  padding-top: .25em;
+}
+
+footer {
+  background: turquoise;
+  color: seashell;
+  width: 100%;
+  padding: 30px 5%;
+  clear: both;
+  margin-top: 100px;
+}
